@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -24,7 +24,7 @@
     <script src="lib/angular/angular-animate.min.js"></script>
     <script src="lib/angular/i18n/angular-locale_en-gb.js"></script>
     <script src="lib/angular-ui-router/angular-ui-router.js"></script>
-    <script src="lib/angular/angular-santize.js"></script>
+    <script src="lib/angular-sanitize/angular-sanitize.js"></script>
     <script src="lib/ng-datalist/ng-datalist.js"></script>
 
     <!-- your app's js -->
@@ -42,6 +42,14 @@
     <!-- directives -->
     <script src="scripts/directives/connectionError.directive.js"></script>
 
+    <!-- Auth0 -->
+    <script src="auth0-variables.js"></script>
+    <!--<script src="https://cdn.auth0.com/js/lock/11.7.2/lock.min.js"></script>-->
+    <!--<script src='lib/lock/lock.js'></script>-->
+    <script src='lib/auth0/auth0.js'></script>
+    <script src='scripts/services/authentication.service.js'></script>
+    <script src='scripts/services/authenticationNotify.service.js'></script>
+
     <!-- modules and services -->
     <script src="scripts/services/locations.service.js"></script>
     <script src="scripts/services/api.service.js"></script>
@@ -55,15 +63,12 @@
     <script src="scripts/states/about/about.module.js"></script>
     <script src="scripts/states/about/about.controller.js"></script>
 
-    <!-- restlet -->
-    <script src="lib/theurbanwild.restlet/module.js"></script>
+    <script src="scripts/states/admin/admin.module.js" ></script>
+    <script src="scripts/states/admin/admin.controller.js" ></script>
 
     <!-- angular-ui-notification -->
     <script src="lib/angular-ui-notification/angular-ui-notification.js"></script>
     <link href="lib/angular-ui-notification/angular-ui-notification.css"/>
-
-    <!-- credentials hack -->
-    <script src="scripts/credentials.js"></script>
 
   </head>
   <body ng-app="starter">
